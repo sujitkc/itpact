@@ -1,0 +1,64 @@
+Draw the flowchart for making making tea. Include as many decisions as possible.
+
+Draw flowchart for all the three programs below.
+**************************************************************
+PROGRAM 1
+**************************************************************
+sum = 0
+count = 1
+n = int(input("Enter the number to which you wish to add: "))
+while(count <= n):
+  sum = sum + count
+  count = count + 1
+
+print("sum = ", sum)
+
+
+
+**************************************************************
+PROGRAM 2
+**************************************************************
+sum = 0
+count = 1
+
+  
+n = int(input("Enter the number: "))
+count = 0
+i = 1
+sum = 0
+while(count < n):
+  print("i =", i)
+  sum = sum + i
+  count = count + 1
+  i = i + 2
+
+print("sum = ", sum)
+  
+
+
+**************************************************************
+PROGRAM 3
+**************************************************************
+import sys
+
+s = input("Enter the string: ")
+
+rev_s = ""
+l = len(s)
+
+i = 0
+while(i < l):
+  rev_s = rev_s + s[l - 1 - i]
+  i = i + 1
+
+print("rev_s = ", rev_s)
+
+i = 0
+while(i < l):
+  if(s[i] != rev_s[i]):
+    print("Not a palindrome")
+    sys.exit(0)
+  i = i + 1
+
+print("Palindrome")
+

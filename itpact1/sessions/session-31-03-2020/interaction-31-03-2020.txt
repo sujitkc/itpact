@@ -1,0 +1,23 @@
+100 + 200 + 50 + 20
+vidyut = 200
+udayan = 175
+kashika = 222
+vigyan = 402
+vidyut + udayan + kashika + vigyan
+200 + 175 + 222 + 402
+total = vidyut + udayan + kashika + vigyan
+total
+average = total / 4
+average
+A train has 12 coaches. Each coach has 72 seats. How many passengers can travel in the train. Use Python to solve this problem.
+# A train has 12 coaches. Each coach has 72 seats. How many passengers can travel in the train. Use Python to solve this problem.
+12 * 13
+12 * 72
+# Arithmetic expressions
+# + plus * multiplication / divide - subtract
+# A bus starts from Rajkot with 52 passengers. 20 passengers get down in Amadabad. 32 passengers get in at Bangalore. The final stop is Nagpur. How many passengers reach Nagpur.
+potato_rate = 20
+onion_rate = 30
+potato_qty = 3
+onion_qty = 2
+(potato_rate * potato_qty) + (onion_rate * onion_qty)

@@ -1,0 +1,177 @@
+PROBLEM 1
+=========
+You are in front of the door of your house. The door is already locked. Enter the house and lock the door from inside.
+
+INSTRUCTIONS
+============
+Open door
+Shut door
+Unlock door
+Lock door 
+Walk into house
+
+ALGORITHM
+=========
+Unlock door
+Open door
+Walk into house
+Shut door
+Lock door
+
+*******************************************************************************
+
+PROBLEM 2
+=========
+You are in front of the door of your house. It is not known earlier if the door is locked or not. Enter the house and lock the door from inside. 
+
+INSTRUCTIONS
+============
+Open door
+Shut door
+Unlock door
+Lock door 
+Walk into house
+Check if the door is locked or not.
+Do an action A1 if a check C succeeds.
+
+
+ALGORITHM
+=========
+Check if the door is locked or not
+
+-- and if branch
+IF the check succeeds THEN DO 
+  Unlock door
+ENDIF
+
+Open door
+Walk into house
+Shut door
+Lock door
+
+*******************************************************************************
+
+PROBLEM 3
+=========
+There is an envelope given to you.
+This envelope is labeled as SPEED POST or REGISTERED POST.
+We have to affix postage stamp of the following denomination to the envelope:
+- Rs. 30 for speed post
+- Rs. 35 for registered post
+We have two boxes B1 and B2 with postage stamps. B1 has postage stamps of denomination Rs. 30. B2 has postage stamps of denomination Rs. 35.
+
+INSTRUCTIONS
+============
+Take out an item X (postage stamp/envelope) from a container Y (bag/box)
+Read a text T written on an item X.
+Compare a text T1 with another text T2.
+Affix a postage stamp S on an envelope E
+Do an action A1 if a check C succeeds, else do action A2.
+
+
+ALGORITHM
+=========
+If-then-else branch
+
+IF text T written on the given envelope is "SPEED POST" THEN
+  take out a postage stamp S from box B1
+  stick S on E
+ELSE IF text T written on E is "REGISTERED POST" THEN
+  take out a postage stamp S from box B2
+  Affix S on E
+ENDIF
+
+*******************************************************************************
+
+PROBLEM 4
+=========
+You are in front of the door of your house. The door is already locked. Enter the house and lock the door from inside.
+
+INSTRUCTIONS
+============
+Open door
+Shut door
+Unlock door
+Lock door
+Take a step
+Check if you are inside the house
+As long as a check C keeps succeeding, keep repeating an action A.
+
+
+
+ALGORITHM
+=========
+A loop
+WHILE Check if you are inside the house is false THEN
+  Take a step
+DONE
+
+*******************************************************************************
+
+PROBLEM 5
+=========
+There are a bunch of envelopes in a sealed bag A.
+Each envelope in this bag is labeled as SPEED POST or REGISTERED POST.
+We have two boxes B1 and B2 with postage stamps. B1 has postage stamps of denomination Rs. 30. B2 has postage stamps of denomination Rs. 35.
+We have to affix postage stamps of the following denomination to each envelope in bag A:
+- Rs. 30 for speed post
+- Rs. 35 for registered post
+and have to put all SPEED POST envelopes in Bag C1 and all REGISTERED POST envelopes in Bag C2.
+In the end, we have to close all containers (bags and boxes).
+
+INSTRUCTIONS
+============
+Check if a container X (bag/box) is empty.
+Read a text T written on an item X.
+Compare a text T1 with another text T2.
+Take out an item X (postage stamp/envelope) from a container Y (bag/box)
+Put an item X (postage stamp/envelope) into a container Y(bag/box)
+Affix a postage stamp S on an envelope E
+Decide to do an action A1 if a check C succeeds, else do action A2.
+As long as a check C keeps succeeding, keep repeating an action A.
+Open a container.
+Close a container.
+
+ALGORITHM
+=========
+Open Bag A.
+WHILE envelope E is not empty DO
+  E = Take out an envelope from a bag A.
+  IF Compare a text written on E with the text "SPEED POST" is true THEN
+    S = Take out a postage stamp from postage stamp S'.
+    Affix a postage stamp S on an envelope E
+    Put E  into a container bag C1
+  ELSE Compare the text written on E with the text "REGISTERED POST" is true THEN
+    S = Take out a postage stamp from bag B2.
+    Affix a postage stamp S on an envelope E
+    Put E  into a container bag C2
+  ENDIF
+DONE
+Close bag A
+Close bag B1
+Close bag B2
+Close bag C1
+Close bag C2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+QUESTION 1
+==========
+Identify a few thing types in your day-to-day life. Identify the operations that you are allowed to do with each of them.
+
+QUESTION 2
+==========
+Consider the following algorithm problem we had discussed in the last session.
+
+You are in front of the door of your house. The door is already locked. Enter the house and lock the door from inside.
+
+What are the various things in the scenario discussed in the problem? What are the operations?
+
+QUESTION 3
+==========
+We have come across the following types in Python so far.
+- Integers
+- Booleans
+- Strings
+
+List a set of operations allowed on each of the above types.
+
+QUESTION 4
+==========
+Discuss with your parent(s)/sibling(s) the reason why Python has different types like this? Try to compare this fact with the advantage of having different types of things in day-to-day life.
+
+Write your summary in 3-4 sentences.

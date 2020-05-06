@@ -1,0 +1,9 @@
+On windows
+
+Press Windows-R
+Type 'cmd' inside it.
+pwd
+
+HOMEWORK
+========
+Enhance the p1.py program to include subtraction (choice = 3) and division (choice = 4).

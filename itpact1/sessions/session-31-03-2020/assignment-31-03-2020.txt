@@ -1,0 +1,21 @@
+What happens when you write (one-by-one) the following commands on the Python interpreter?
+  1 + 2 +
+  (1 + 2) * (3 * 4
+  10 / 0
+  10 == 10
+  10 == 20
+  10 > 10
+  10 > 9
+  9 < 10
+  9 <= 9
+  9 <= 10
+  
+Solve the following calculations. Use Python as your calculator. Use of variables is encouraged wherever applicable.
+
+1. Udayan's birthday is on March 7. He threw a big party on his birthday. He spent Rs. 3500. The expenditure for each guest was Rs. 300. The cake cost was Rs. 500 and chips cost Rs. 300. How many guests turned up for Udayan's party?
+
+2. Kashika brought 47 balloons to distribute among her 25 friends. She gave 2 balloons to each of her friends. 3 balloons got deflated. How many of her friends will not get balloons?
+
+3. Vidyut drinks 0.25 litres of water in the morning, and 0.35 litres twice later in the day. How much water does Vidyut drink everyday?
+
+4. Vigyan wants to make donations for the help of needy people during Covid19 outbreak. He has Rs. 400 in his piggy bank. Each meal costs Rs. 50. How many people will Vigyan be able to help?

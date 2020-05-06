@@ -1,0 +1,45 @@
+You have to read very carefully.
+You have to notice every little detail. Even a small mistake will make the program completely wrong.
+
+With 2 variables (sum and count) it was not easy to remember their values during the run of the program.
+
+Line number  count     sum
+-----------  -----     ---
+     2         1         0
+     5         2         1
+     5         3         3
+     5         4         6
+     5         5        10
+     5         6        15
+     5         7        21
+     5         8        28
+     5         9        36
+     5        10        45
+     5        11        55
+     3        
+     7
+
+count  sum
+-----  ---
+  2     0
+  3     2
+  4     5
+  5     9
+  6    14
+  7    20
+  8    27
+  9    35
+ 10    44
+  
+I go to school on Sundays.
+
+
+
+
+
+
+
+
+
+Syntax error -- Python is able to detect them.
+Logical errors -- Python is unable to detect them.

@@ -1,0 +1,40 @@
+Q. Read the program friends3.py and understand its functioning step by step.
+    Use the method of dry running that we have learned in an earlier class to
+    help your understanding.
+  (Not for submission)
+
+NOTE
+----
+ - In all the programming problems given below, the list in question should
+    be accepted as an input from the user.
+ - In all the problems given below, please try to create the solution by using
+    only the features of the programming language which have been discussed
+    in the class so far.
+
+Q. Modify the program friends3.py to achieve the same functionality without
+    using lists.
+  (File: friends4.py)
+
+Q. Write a program that prints all elements of a list in the same order.
+  (File: print_list.py)
+
+Q. Write a program that prints all elements of a list in reverse order.
+  (File: print_rev_list.py)
+
+Q. Write a program that computes and prints the product of all elements of a list.
+  (File: print_prod.py)
+
+Q. Write a program that prints 'True' if a number is already present in a given
+   list, 'False' otherwise.
+  (File: find.py)
+
+Q. Write a program that finds and prints the maximum element in a list.
+  (File: max_list.py)
+
+Q. Write a program that computes a list with the given value removed from the
+    list.
+  (File: remove_value.py)
+
+Q. Write a program that computes a list with the value at the given index value
+  removed from the list.
+  (File: remove_index.py)
