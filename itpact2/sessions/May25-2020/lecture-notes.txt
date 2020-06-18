@@ -1,0 +1,26 @@
+We learned the following today:
+- Operators can have mixed types of operands
+  For example: in "ITPACT" * 5, * takes "ITPACT" (a string) and 5 (an integer)
+  and gives as a result another string. We saw many other examples too. 
+- We saw an example of how such operators can be used to implement interesting
+  programs (banner.py).
+- Algorithm: A step by step method of instructing the computer to carry out a
+  computation. We saw two real life examples of opening the door. 
+- We learned that certain algorithm require decision making capability (e.g. if
+  the door is locked) to write.
+- If branch instruction which allows us to add decision-making as part of programs.
+
+Additionally, we learned:
+- Importance of precise instructions when writing computer programs
+We saw this funny video:
+https://www.youtube.com/watch?v=FN2RM-CHkuI
+
+- Errors अच्छे हैं! (Errors are good!) 
+- We learned that it's not at all bad if your programs encounter errors.
+  They are the computer's way to tell you where your program is going wrong and
+  how you can fix your bugs. You should learn to read the error messages 
+  carefully and make corrections in your program.
+- We also pointed out some common errors new students make while writing their
+  first programs involving branches. For example:
+  * Forgetting to add the colon at the end of the if clause line.
+  * Uneven indentation of statements within a block.

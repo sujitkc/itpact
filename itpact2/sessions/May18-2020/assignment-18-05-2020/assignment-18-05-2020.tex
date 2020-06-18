@@ -1,0 +1,154 @@
+\documentclass[addpoints,11pt]{exam}
+\usepackage{mathpartir}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{crayola}
+\usetikzlibrary{positioning,shapes,arrows,shadows}
+\usetikzlibrary{automata,positioning,shapes,arrows,backgrounds,fit}
+
+\author{}
+\title{ITPACT \\ Assignment May 18, 2020}
+
+\date{}
+\definecolor{lightblue}{rgb}{0.8,0.93,1.0} % color values Red, Green, Blue
+\definecolor{Blue}{rgb}{0,0,1.0} % color values Red, Green, Blue
+\definecolor{Red}{rgb}{1,0,0} % color values Red, Green, Blue
+\definecolor{Pink}{rgb}{0.7,0,0.2}
+\definecolor{links}{HTML}{2A1B81}
+\definecolor{mydarkgreen}{HTML}{126215}
+\definecolor{mymaroon}{HTML}{800000}
+
+\newcommand{\myprod}[0]{\hspace{0.5cm}$::=$\hspace{0.5cm}}
+\newcommand{\mychoice}[0]{\hspace{0.75cm}$|$\hspace{0.25cm}}
+\newcommand{\grade}[1]{{\color{red}\textbf{Grading Key:} #1}}
+
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\bfseries#2}}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=mymaroon,
+    urlcolor=mydarkgreen
+}
+\lstdefinestyle{pc}{
+	language = Python,
+	basicstyle = \scriptsize\ttfamily,
+	stringstyle = \ttfamily\color{Purple},
+	keywordstyle=\color{black}\bfseries,
+	identifierstyle=\ttfamily\color{BrickRed},
+	frame=single,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false
+}
+
+\lstdefinestyle{jc}{
+	language = Java,
+	basicstyle = \small\ttfamily,
+	stringstyle = \ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{Pink},
+	commentstyle=\color{OliveGreen},
+	frame=single,
+	frameround=tttt,
+	showstringspaces=false
+}
+
+\lstdefinestyle{occ}{
+	language = [Objective]Caml,
+	basicstyle = \small\ttfamily,
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{BrickRed}\ttfamily,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	mathescape=true,
+	escapeinside={(*@}{@*)}
+}
+
+\lstdefinestyle{oc}{
+	language = bash,
+	backgroundcolor = \color{black!60},
+	basicstyle = \small\ttfamily\color{white},
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{white}\bfseries,
+	identifierstyle=\ttfamily,
+	commentstyle=\color{Yellow},
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	escapeinside={(*@}{@*)}
+}
+
+\begin{document}
+  \tikzstyle{fun} = [draw=gray, thick, fill=white, rounded corners, rectangle, inner sep=1cm]
+\maketitle
+
+\pointsinrightmargin
+
+\thispagestyle{head}
+
+\section*{Note:}
+The below assignment is a fun family activity that should be done with parents' involvement.
+
+\section*{Questions:}
+
+\begin{questions}
+
+\question
+Find three examples each of \emph{abstraction} and \emph{interfaces} around you.
+
+\question
+Prepare your one day's schedule using the following approach:
+\begin{enumerate}
+\item Identify 5-6 broad categories of activities that you would like to do in a day: e.g. creative, fitness, entertainment etc.
+\item Identify 3-5 activities each of these categories. For example, in creative, we have drawing, singing, playing musical instruments, crafts, writing etc.
+\item Allocate an appropriate number of hours to be given in a day to each of the categories identified above.
+\item Divide your day into one-hourly or half-hourly slots starting from 9 AM going through to 6 PM.
+\item Schedule activities in each of these slots. Ensure that each category above gets the number of hours you have assigned to it.
+\item Ensure that at least one hour in all should be joint activity with your parents. Interface with their schedule through their free slots.
+\end{enumerate}
+\textbf{Note:}
+\begin{enumerate}
+\item Vigyan's schedule (fictitious anyway) is provided herewith as a reference. However, you should make your schedule as per your taste and need.
+\item Submit your answer in a file named \texttt{schedule.xls}.
+\end{enumerate}
+
+\question
+Observe the working of your household:
+\begin{enumerate}
+\item What are the most important 4-5 `departments' of your household.
+\item How do your parents divide the work?
+\item Please indicate the examples of coordination between them through interfacing.
+\item Optional question: What is your role in the above organisation?
+\end{enumerate}
+\textbf{Note:}
+\begin{enumerate}
+\item Submit your answer in a file named \texttt{family.doc}.
+\end{enumerate}
+
+\question
+The program \texttt{friends.py} is provided herewith. Modify the program to accept the contributions from each friend (Amar, Akbar and Anthony) as inputs from the user. The interaction with the modified program should be as follows (text in {\color{Red}red} are output printed by the program; text in {\color{Blue}blue} are input typed by the user.):
+
+{\color{Red}Enter Amar's contribution:} {\color{Blue}1000} \\
+{\color{Red}Enter Akbar's contribution:} {\color{Blue}500} \\
+{\color{Red}Enter Anthony's contribution:} {\color{Blue}300} \\
+{\color{Red}Total expenditure =  1800} \\
+{\color{Red}Average expenditure per person =  600.0} \\
+{\color{Red}Amar owes  -400.0} \\
+{\color{Red}Akbar owes  100.0} \\
+{\color{Red}Anthony owes  300.0} 
+ 
+\textbf{Hint:} The command for accepting numbers as input is: \lstinline[style=pc]@x = int(input("..."))@.
+\end{questions}
+\end{document}

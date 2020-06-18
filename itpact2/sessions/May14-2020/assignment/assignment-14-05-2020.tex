@@ -1,0 +1,152 @@
+\documentclass[addpoints,11pt]{exam}
+\usepackage{mathpartir}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{crayola}
+\usetikzlibrary{positioning,shapes,arrows,shadows}
+\usetikzlibrary{automata,positioning,shapes,arrows,backgrounds,fit}
+
+\author{}
+\title{ITPACT \\ Assignment May 14, 2020}
+
+\date{}
+\definecolor{lightblue}{rgb}{0.8,0.93,1.0} % color values Red, Green, Blue
+\definecolor{Blue}{rgb}{0,0,1.0} % color values Red, Green, Blue
+\definecolor{Red}{rgb}{1,0,0} % color values Red, Green, Blue
+\definecolor{Pink}{rgb}{0.7,0,0.2}
+\definecolor{links}{HTML}{2A1B81}
+\definecolor{mydarkgreen}{HTML}{126215}
+\definecolor{mymaroon}{HTML}{800000}
+
+\newcommand{\myprod}[0]{\hspace{0.5cm}$::=$\hspace{0.5cm}}
+\newcommand{\mychoice}[0]{\hspace{0.75cm}$|$\hspace{0.25cm}}
+\newcommand{\grade}[1]{{\color{red}\textbf{Grading Key:} #1}}
+
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\bfseries#2}}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=mymaroon,
+    urlcolor=mydarkgreen
+}
+\lstdefinestyle{pc}{
+	language = Python,
+	basicstyle = \scriptsize\ttfamily,
+	stringstyle = \ttfamily\color{Purple},
+	keywordstyle=\color{black}\bfseries,
+	identifierstyle=\ttfamily\color{BrickRed},
+	frame=single,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false
+}
+
+\lstdefinestyle{jc}{
+	language = Java,
+	basicstyle = \small\ttfamily,
+	stringstyle = \ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{Pink},
+	commentstyle=\color{OliveGreen},
+	frame=single,
+	frameround=tttt,
+	showstringspaces=false
+}
+
+\lstdefinestyle{occ}{
+	language = [Objective]Caml,
+	basicstyle = \small\ttfamily,
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{BrickRed}\ttfamily,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	mathescape=true,
+	escapeinside={(*@}{@*)}
+}
+
+\lstdefinestyle{oc}{
+	language = bash,
+	backgroundcolor = \color{black!60},
+	basicstyle = \small\ttfamily\color{white},
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{white}\bfseries,
+	identifierstyle=\ttfamily,
+	commentstyle=\color{Yellow},
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	escapeinside={(*@}{@*)}
+}
+
+\begin{document}
+  \tikzstyle{fun} = [draw=gray, thick, fill=white, rounded corners, rectangle, inner sep=1cm]
+\maketitle
+
+\pointsinrightmargin
+
+\thispagestyle{head}
+
+\section*{Questions:}
+
+\begin{questions}
+
+\question
+Once upon a time there were three friends -- Amar, Akbar and Anthony.
+They decided to go for a movie outing. The expenses were shared as follows:
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+  ITEM         & EXPENSE   &       CONTRIBUTOR \\
+\hline
+Transportation &     1000  &           Amar    \\
+Movie tickets  &     1200  &           Akbar   \\
+Dinner         &     2500  &           Anthony \\
+Ice cream      &      500  &           Akbar   \\
+Popcorn        &      400  &           Amar  \\
+\hline
+\end{tabular}
+\end{center}
+
+Use Python interpreter to do the following calculations:
+\begin{enumerate}
+\item What was the total money spent?
+\item How much did each friend spend on average?
+\item How much does each friend owe/receive at the end of day?
+\end{enumerate}
+
+Submit the dump of your interpreter interaction.
+
+
+\textbf{\color{BrickRed}Note:} \\
+For example, the dump of the interpreter interaction that we did today in the
+session is as follows:
+\begin{lstlisting}[style=oc]
+*******************************************************************************
+>>> one = 1 * 20
+>>> two = 2 * 17
+>>> five = 5 * 15
+>>> ten = 10 * 15
+>>> twenty = 20 * 6
+>>> fifty = 50 * 43
+>>> hundred = 100 * 21
+>>> five_hundred = 500 * 36
+>>> one + two + five + ten + twenty + fifty + hundred + five_hundred
+22649
+*******************************************************************************
+\end{lstlisting}
+
+\end{questions}
+\end{document}

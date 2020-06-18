@@ -1,0 +1,141 @@
+\documentclass[addpoints,11pt]{exam}
+\usepackage{mathpartir}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{crayola}
+\usetikzlibrary{positioning,shapes,arrows,shadows}
+\usetikzlibrary{automata,positioning,shapes,arrows,backgrounds,fit}
+
+\author{}
+\title{ITPACT \\ Assignment June 11, 2020}
+
+\date{}
+\definecolor{lightblue}{rgb}{0.8,0.93,1.0} % color values Red, Green, Blue
+\definecolor{Blue}{rgb}{0,0,1.0} % color values Red, Green, Blue
+\definecolor{Red}{rgb}{1,0,0} % color values Red, Green, Blue
+\definecolor{Pink}{rgb}{0.7,0,0.2}
+\definecolor{links}{HTML}{2A1B81}
+\definecolor{mydarkgreen}{HTML}{126215}
+\definecolor{mymaroon}{HTML}{800000}
+
+\newcommand{\kctt}[1]{\lstinline[basicstyle=\ttfamily]@#1@}
+\newcommand{\kcsecdiv}[0]{
+\begin{center}
+\begin{tikzpicture}
+\draw[-] (0,0) -- (1.8, 0);
+\draw (2, 0) circle (0.1cm);
+\draw[-] (2.2,0) -- (4, 0);
+\end{tikzpicture}
+\end{center}
+}
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\bfseries#2}}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=mymaroon,
+    urlcolor=mydarkgreen
+}
+\lstdefinestyle{pc}{
+	language = Python,
+	basicstyle = \scriptsize\ttfamily,
+	stringstyle = \ttfamily\color{Purple},
+	keywordstyle=\color{black}\bfseries,
+	identifierstyle=\ttfamily\color{BrickRed},
+	frame=single,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false
+}
+
+\lstdefinestyle{jc}{
+	language = Java,
+	basicstyle = \small\ttfamily,
+	stringstyle = \ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{Pink},
+	commentstyle=\color{OliveGreen},
+	frame=single,
+	frameround=tttt,
+	showstringspaces=false
+}
+
+\lstdefinestyle{occ}{
+	language = [Objective]Caml,
+	basicstyle = \small\ttfamily,
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{BrickRed}\ttfamily,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	mathescape=true,
+	escapeinside={(*@}{@*)}
+}
+
+\lstdefinestyle{oc}{
+	language = bash,
+	backgroundcolor = \color{black!60},
+	basicstyle = \small\ttfamily\color{white},
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{white}\bfseries,
+	identifierstyle=\ttfamily,
+	commentstyle=\color{Yellow},
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	escapeinside={(*@}{@*)}
+}
+
+\begin{document}
+  \tikzstyle{fun} = [draw=gray, thick, fill=white, rounded corners, rectangle, inner sep=1cm]
+\maketitle
+
+\pointsinrightmargin
+
+\thispagestyle{head}
+
+\section*{Instructions}
+\begin{enumerate}
+\item All problems should be solved using loops.
+\item In all the problems given below, please try to create the solution by using
+    only the features of the programming language which have been discussed
+    in the class so far.
+\item For all the problems below, use for loops.
+\end{enumerate}
+
+\kcsecdiv
+
+\begin{questions}
+\question Write a program that prints all elements of a list in the same order. User for loop.
+
+  (\textbf{\color{BrickRed}File:} \kctt{print_list.py})
+
+\question Write a program that prints all elements of a list in reverse order. User for loop.
+
+  (\textbf{\color{BrickRed}File:} \kctt{print_rev_list.py})
+
+\question Write a program that computes and prints the product of all elements of a list. User for loop.
+
+  (\textbf{\color{BrickRed}File:} \kctt{print_prod.py})
+
+\question Write a program that prints 'True' if a number is already present in a given
+   list, 'False' otherwise. User for loop.
+
+  (\textbf{\color{BrickRed}File:} \kctt{find.py})
+
+\question Write a program that finds and prints the maximum element in a list. User for loop.
+
+  (\textbf{\color{BrickRed}File:} \kctt{max_list.py})
+
+\end{questions}
+\end{document}

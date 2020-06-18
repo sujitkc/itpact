@@ -1,0 +1,17 @@
+Today, we learned about if-elif-else way of writing multibranch decisions.
+We saw the elif is a "syntactic sugar" over if-else if, i.e. using it, 
+there's no extra functionality that we can implement that we can't using
+if-else if branches. However, we all agreed that elifs make the programs
+more readable. And this is important.
+
+We then learned looping, a new control-flow construct which allows us to
+write algorithms where the same instruction is executed repeatedly to 
+achieve desirable effects.
+
+We also learned about 'break' which allows us to terminate execution of a
+loop whenever we want.
+
+We finished our discussion with a short discussion on booleans which is
+a very important data type. In fact, without them it would have been 
+impossible to write programs involving decisions: i.e. branching and/or loops.
+

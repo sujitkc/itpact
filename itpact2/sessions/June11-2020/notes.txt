@@ -1,0 +1,11 @@
+Solved two of the problems from the Monday homework.
+
+
+Syntactic sugar: Feature of programming language which doesn't add any extra power to the language.
+  But it makes programs easier to write and read. e.g. +=, -=, ...
+
+We learned more things about lists: append, extend, remove, range
+
+Infinite loops. Loops which never end.
+
+For loop.

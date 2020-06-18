@@ -1,0 +1,15 @@
+General
+- Everyone getting emails, assignments?
+- Google Meet
+
+Types in real world
+- Examples
+- Significance
+
+Types in programming
+- Meaning of types
+- Integers, Float, Strings, Booleans
+
+Algorithms
+- Sequencing
+- Branching

@@ -1,0 +1,179 @@
+\documentclass[addpoints,11pt]{exam}
+\usepackage{mathpartir}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{crayola}
+\usetikzlibrary{positioning,shapes,arrows,shadows}
+\usetikzlibrary{automata,positioning,shapes,arrows,backgrounds,fit}
+
+\author{}
+\title{ITPACT \\ Assignment May 25, 2020}
+
+\date{}
+\definecolor{lightblue}{rgb}{0.8,0.93,1.0} % color values Red, Green, Blue
+\definecolor{Blue}{rgb}{0,0,1.0} % color values Red, Green, Blue
+\definecolor{Red}{rgb}{1,0,0} % color values Red, Green, Blue
+\definecolor{Pink}{rgb}{0.7,0,0.2}
+\definecolor{links}{HTML}{2A1B81}
+\definecolor{mydarkgreen}{HTML}{126215}
+\definecolor{mymaroon}{HTML}{800000}
+
+\newcommand{\kctt}[1]{\lstinline[basicstyle=\ttfamily]@#1@}
+
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\bfseries#2}}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=mymaroon,
+    urlcolor=mydarkgreen
+}
+\lstdefinestyle{pc}{
+	language = Python,
+	basicstyle = \scriptsize\ttfamily,
+	stringstyle = \ttfamily\color{Purple},
+	keywordstyle=\color{black}\bfseries,
+	identifierstyle=\ttfamily\color{BrickRed},
+	frame=single,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false
+}
+
+\lstdefinestyle{jc}{
+	language = Java,
+	basicstyle = \small\ttfamily,
+	stringstyle = \ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{Pink},
+	commentstyle=\color{OliveGreen},
+	frame=single,
+	frameround=tttt,
+	showstringspaces=false
+}
+
+\lstdefinestyle{occ}{
+	language = [Objective]Caml,
+	basicstyle = \small\ttfamily,
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{Blue}\bfseries,
+	identifierstyle=\color{BrickRed}\ttfamily,
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	mathescape=true,
+	escapeinside={(*@}{@*)}
+}
+
+\lstdefinestyle{oc}{
+	language = bash,
+	backgroundcolor = \color{black!60},
+	basicstyle = \small\ttfamily\color{white},
+	stringstyle = \color{red}\ttfamily,
+	keywordstyle=\color{white}\bfseries,
+	identifierstyle=\ttfamily,
+	commentstyle=\color{Yellow},
+	frameround=tttt,
+	frame=single,
+	numbers=none,
+	showstringspaces=false,
+	escapeinside={(*@}{@*)}
+}
+
+\begin{document}
+  \tikzstyle{fun} = [draw=gray, thick, fill=white, rounded corners, rectangle, inner sep=1cm]
+\maketitle
+
+\pointsinrightmargin
+
+\thispagestyle{head}
+
+\section*{Games and Activities}
+The below assignment is a fun family activity that should be done with family members' involvement.
+
+\subsection*{GAME}
+One of your family members is standing blindfolded in one of your rooms (say, one of the bedrooms). You have to take him/her to the room at the other room by instructing. There are only the following instructions given:
+\begin{enumerate}
+\item Take one step.
+\item Stop
+\item Turn right
+\item Turn left
+\end{enumerate}
+
+Further activities:
+\begin{itemize}
+\item Switch your roles.
+\item Modify the game by adding instructions to the list above and setting harder targets.
+\end{itemize}
+
+\subsection*{INSTRUCTION TO FIND WAY HOME}
+Write detailed instructions to your friend coming from the airport to our residence. Your friend is new to the city. Hence, try to give as detailed an instruction as possible. Try to account for as many eventualities as you can think of. For example: Google maps not working, Taxi not working etc. (of course, don't go overboard, e.g. \emph{alien attack} or \emph{Tsunami}).
+
+\subsection*{INTRODUCTION TO COMPUTER USAGE}
+Consider a person who is not familiar to using computers, e.g. your little sibling, or your grandparent. Sit with him/her and instruct him/her to switch on the computer and perform some activity (e.g. writing a letter on MS Word) using only verbal instructions.
+
+Repeat the above by sitting away from him/her.
+
+\section*{Questions:}
+
+\begin{questions}
+
+\question
+Write a program that accepts a number from the user and prints `BIG' if the number is greater than 10, else prints `SMALL'.
+
+(\textbf{\color{BrickRed}File:}\lstinline[basicstyle=\ttfamily]@num.py@)
+
+\question
+Write a program that accepts a string from the user and prings `LONG' if the length of the string is greater than 10, else prints `SHORT'.
+
+(\textbf{\color{BrickRed}File:} \lstinline[basicstyle=\ttfamily]@strlen.py@)
+
+\question
+Write a modified banner program which allows the user to choose the decorator character of the banner. For example, an interaction with this program should look somewhat as follows:
+
+\begin{lstlisting}[style=oc]
+$ python3 banner-decorator.py
+Enter your decorator: #
+Enter your message: Hello world!
+################
+# Hello world! #
+################
+\end{lstlisting}
+
+(\textbf{\color{BrickRed}File:} \kctt{banner-decorator.py})
+
+\question
+Write a modified banner program which allows the user to choose the decorator character of the banner. It functions similarly as \kctt{banner-decorator.py}. However, when the user inputs a string which has other than one character, the program shows an error message and exits. For example, an interaction with this program should look somewhat as follows:
+
+\begin{lstlisting}[style=oc]
+$ python3 banner-safe.py 
+Enter your decorator: @@
+Your decorator must be only one character long.
+\end{lstlisting}
+
+\textbf{\color{BrickRed}Hint:}
+\begin{enumerate}
+\item Not equal to operator in Python is written as \kctt{!=}.
+\item To allow program to exit from a given program point
+	\begin{enumerate}
+	\item Write \kctt{import sys} at the top of the file.
+	\item Instruction \kctt{sys.exit(0)} from where you want to exit the program.
+	\end{enumerate}
+\end{enumerate}
+(\textbf{\color{BrickRed}File:} \kctt{banner-safe.py})
+
+\question
+Enhance the calc.py program to include subtraction and division on top of addition and multiplication.
+
+(\textbf{\color{BrickRed}File:} \kctt{calc.py})
+
+\end{questions}
+\end{document}

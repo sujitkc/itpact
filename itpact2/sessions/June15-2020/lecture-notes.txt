@@ -1,0 +1,137 @@
+Two ways of reversing a list.
+1. Using lst.reverse: in this case the original list lst gets reversed.
+2. By copying and reversing.
+
+Aliasing
+
+Atomicity: The property of being unbreakable or undivisible.
+Atomic data types: int, float, boolean, string
+Container/composite types: list
+
+Variables pointing to container types contain the memory address of the actual container.
+It is possible for two variables lst1 and lst2 to point to the same list.
+--> lst1 and lst2 are aliases of each other.
+--> lst1 aliases lst2; lst2 aliases lst1.
+
+
+You can copy a list lst into another, e.g. lst2 by doing lst2 = lst[:]
+
+IMPORTANT REMINDER (10TH TIME): This course is not a programming course. This course
+is about computational thinking: Applying a computer scientist's methods in solving
+problems in real life. You will go on to become an actor, dancer, scientist,
+sport person, ... anything that you like. But what you learn from this course
+will be useful in solving problems in whatever you do. Whenever you face any problem,
+you will find the things learnt in this course useful:
+- Problem decomposition,
+- Algorithmic thinking
+- Abstraction
+- Modularisation
+- Interfaces
+- ...
+
+FINAL EXAMINATION: Final examination will be in two parts:
+1. Recorded video. Details will be shared in a few more days. Here are a few top level heads-up:
+     - Problem will be provided a priori. Each student will solve a different problem.
+     - Duration is 5 minutes
+     - Will involve your description of one programming problem and its solution.
+2. An essay:
+   - Topic will be common and will be provided a priori.
+   - Length will be 200 to 300 words
+
+------------ TODAY'S INTERACTION WITH INTERPRETER -----------------------------------------
+Python 3.5.2 (default, Apr 16 2020, 17:47:17) 
+[GCC 5.4.0 20160609] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> lst = range(1, 11)
+>>> lst
+range(1, 11)
+>>> lst = list(lst)
+>>> lst
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst.reverse()
+>>> lst
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst.reverse()
+>>> lst
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst1 = lst
+>>> lst1.reverse()
+>>> lst1
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst # will lst remain the same?
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst1
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst1 == lst
+True
+>>> a = 10
+>>> b = a
+>>> b
+10
+>>> b = 9
+>>> a
+10
+>>> 
+>>> a
+10
+>>> lst1
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst1[3] = 70
+>>> lst1
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> a
+10
+>>> b = a
+>>> b = 9
+>>> a
+10
+>>> lst1 = lst
+KeyboardInterrupt
+>>> lst1 = []
+>>> for e in lst:
+...   lst1.append(e)
+... 
+>>> lst
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst1
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst == lst1
+True
+>>> lst1[3] = 7
+>>> lst1
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+>>> lst
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst1.reverse()
+>>> lst1
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> lst
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst2 = lst[:]
+>>> lst2
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst2[2] = 80
+>>> lst2
+[10, 9, 80, 70, 6, 5, 4, 3, 2, 1]
+>>> lst
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> lst2.reverse()
+>>> lst2
+[1, 2, 3, 4, 5, 6, 70, 80, 9, 10]
+>>> lst
+[10, 9, 8, 70, 6, 5, 4, 3, 2, 1]
+>>> l = 
+>>> l = [1, 2, 3]
+>>> l.reverse()
+>>> l
+[3, 2, 1]
+>>> print(l)
+[3, 2, 1]
+>>> x = l.reverse()
+>>> x
+>>> 
+

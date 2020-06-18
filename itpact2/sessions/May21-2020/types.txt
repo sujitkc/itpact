@@ -1,0 +1,28 @@
+Types -- things with interfaces
+
+     THING               OPERATION/USE
+     =====               =============
+     Pen                 Write
+     Washing machine     Wash clothes, make butter milk
+     Microwave oven      Heat/cook food
+     Computer            calculating, searching, using for writing documents, making presentation
+     Stick               Beat, make fire, walking, selfie ...
+
+
+Do you think we can use a computer to go from one place to another?
+
+Do you think it's a good thing there are things and then there things that we can do with those things? 
+
+Noun : Common/collection noun
+In programming, we deal with things and we do operations on them. They are called types.
+
+Things in programs are called data.
+Operations in programs are called operations.
+
+What is the type of 0.5? float -- floating point numbers (fractional numbers)
+
+"Sujit", "Pranet", "Vedanshi", "Agamya", "Tapas" -- Strings (str)
+
+True and False are boolean types (bool)
+
+Four data types in Python: integer (int), Floating point (float), String (str), Boolean (bool)
