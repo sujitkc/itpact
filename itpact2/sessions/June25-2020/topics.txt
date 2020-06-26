@@ -1,0 +1,45 @@
+Visual representation
+Arithmetic operators
+Relational operators
+Variable
+Arithmetic expressions
+Instruction/command
+Branching instruction
+Pseudo-code
+Algorithm
+Computation
+Parts of a computer -- Processor, memory, input, output
+User interface (UI)
+Graphical user interface (GUI)
+Data types in Python
+Examples of types of objects in real-life?
+Why do we need types in real-life and in programming?
+Looping instructions
+Problem decomposition
+Abstraction
+Patterns
+Interface
+Modules, modularity
+Reversing a list
+Adding one list to another
+Syntactic sugar
+Advantages of for loop on while loop
+Flowcharts
+Box-types in flowcharts
+Container types in Python
+Atomic types in Python
+Operations on lists: append and extend
+Operations on lists: range and range
+Infinite loops
+Flexibility of system
+Robustness of system
+Aliasing
+Body's defence system
+Example of branching (if) in biology
+Example of loops in biology
+Example of patterns in biology
+Good, bad and ugly in food
+Example of decomposition in body
+Errors अच्छे हैं! (Errors are good!)
+Difference between interacting with a person and a computer
+Muli-branch decisions in programming
